@@ -1,3 +1,11 @@
+"""
+
+In this program, we use Bayesian estimation to model the Laplace distribution parameters (location and scale) for each array. We then compute the difference between the location parameters, which represents the difference between the means of the arrays. To determine if the arrays have the same distribution, we calculate the probability that the absolute difference between the location parameters is less than or equal to a threshold (e.g., 0.01).
+
+Replace array1 and array2 with your numpy arrays before running the code. The program will output the estimated location and scale parameters, the difference between the location parameters (means), and the probability that the arrays have the same distribution. Note that the probabilities and differences should be interpreted cautiously, as the choice of priors and the threshold for the same distribution can impact the results. Adjust the threshold and number of samples as needed based on your specific problem.
+"""
+
+
 import numpy as np
 import pymc3 as pm
 
